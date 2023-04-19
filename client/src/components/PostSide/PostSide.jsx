@@ -1,12 +1,12 @@
 import React from 'react'
-// import Posts from '../Posts/Posts'
-// import PostShare from '../PostShare/PostShare'
+import Posts from '../Posts/Posts'
+import PostShare from '../PostShare/PostShare'
 import './postSide.css'
 const PostSide = () => {
   return (
    <div className="PostSide">
-       {/* <PostShare/>
-       <Posts/> */}
+       <PostShare/>
+       <Posts/>
    </div>
   )
 }
