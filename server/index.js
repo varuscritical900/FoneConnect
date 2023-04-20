@@ -9,8 +9,11 @@ import UserRoute from './routes/UserRoute.js'
 import PostRoute from './routes/PostRoute.js'
 import UploadRoute from './routes/UploadRoute.js'
 
-
 const app = express();
+
+//Static files
+app.use(express.static('public')); 
+app.use('/images', express.static('images'));
 
 //middleware
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
