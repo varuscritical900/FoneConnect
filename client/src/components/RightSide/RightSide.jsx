@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./rightSide.css";
 import Home from "../../img/home.png";
 import Noti from "../../img/noti.png";
-import Comment from "../../img/comment.png";
+import Chat from "../../img/comment.png";
 import { UilSetting } from "@iconscout/react-unicons";
 import TrendCard from "../TrendCard/TrendCard";
 import ShareModal from "../ShareModal/ShareModal";
@@ -18,7 +18,10 @@ const RightSide = () => {
         </Link>
         <UilSetting />
         <img src={Noti} alt="" />
-        <img src={Comment} alt="" />
+        <Link to='../chat'>
+        <img src={Chat} alt="" />
+        </Link>
+        
       </div>
 
       <TrendCard />
