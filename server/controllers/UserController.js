@@ -60,7 +60,7 @@ export const updateUser = async (req, res) => {
       console.log({user, token})
       res.status(200).json({user, token});
     } catch (error) {
-      console.log("Error agya hy")
+      console.log("Error")
       res.status(500).json(error);
     }
   } else {
